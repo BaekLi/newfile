@@ -42,6 +42,8 @@ Date:   Fri May 18 20:59:18 2018 +0800
 ```bash
 //克隆文件
 $ git clone https://github.com/BaekLi/GeneExpressionScatterPlot.git
+//进入文件夹
+cd GeneExpressionScatterPlot
 ```
 
 2. 添加文件分两步执行的：
@@ -128,5 +130,28 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 ```bash
 $ git push origin master
+```
+
+### 分支管理
+
+主分支master
+
+#### 查看分支
+
+`git branch`命令会列出所有分支，当前分支前面会标一个`*`号。
+
+```bash
+$ git branch
+* dev
+  master
+```
+
+#### 创建分支
+
+创建`dev`分支，然后切换到`dev`分支：（加上`-b`参数表示创建并切换）
+
+```bash
+$ git checkout -b dev
+Switched to a new branch 'dev'
 ```
 
